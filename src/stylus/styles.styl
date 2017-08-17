@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700')
+
+html, body, #app
+  height: 100%
+
+#appWrapper, #contentWrapper
+  min-height: 100%
+
+#contentWrapper
+  margin-bottom: 100px
+
+main
+  width: 850px
+
+aside 
+  padding-right: 60px
+
+.top-15
+  margin-top: 15px
+
+.sidebar
+  @media screen and (max-width: 1200px)
+    display: none !important
+
+.blog-navbar 
+  border-radius: 0px
+  border: 0px solid transparent
+  background: #aaaa90
+  padding-top: 46px
+  margin-bottom: 33px
+
+.blog-name
+  font-size: 42px
+  a
+    color: #fff
+    font-family: "Montserrat"
+    font-weight: 700
+  a:hover
+    text-decoration: none
+
+.zero-right
+  padding-right: 0px
+
+.create-new-article
+  margin-bottom: 30px
+
+.create-article-submit
+  font-size: 16px
+  margin-bottom: 105px
+  padding: 8px
+  margin-top: 15px
+
+.cssload-message
+  font-family: "Montserrat"
+  font-size: 15px
+  color: #333
+  font-weight: 400
+
+/*  ARTICLE PREVIEW  */
+
+.article-preview
+  display: table
+  font-family: "Montserrat"
+  border-bottom: 1px solid #aaaa90
+  margin-bottom: 70px
+  font-size: 14px
+  padding-left: 0px
+  padding-right: 0px
+  margin-left: 25px
+  color: #333
+  width:850px
+  @media (max-width: 900px)
+    margin: 20px auto
+    width: 700px
+  .article-image
+    height: 425
+    width: 430
+  .article-preview-title
+    font-weight: 700
+    padding-bottom: 60px
+    font-size: 26px
+  .article-preview-left
+    display: table-cell  
+  .article-preview-right
+    display: table-cell
+    height: 100%
+    padding-left: 15px
+    .article-preview-content
+      text-align: justify
+      word-wrap: break-word
+      max-width: 400px
+    .read-more
+      position: absolute
+      right: 0px
+      bottom: 15px
+      .keep-reading, .edit
+        color: #aaaa90
+      .edit
+        padding-right: 15px
+
+.posted-block
+  position: absolute
+  left: -10px
+  top: 0px
+  color: #fff
+  font-size: 32px
+  font-weight: 500
+  font-family: "Montserrat"
+  text-shadow: 1px 1px 0 #777;
+  .posted-wrapper
+    position: relative
+    .posted-date
+      padding-bottom: 7px;
+      line-height: 37px;
+      position: relative
+      padding-left: 5px
+      box-sizing: border-box
+      width: 50px
+      background: #aaaa90
+    .posted-vertical
+      padding: 5px 13px 5px 4px
+      margin-top: -50px;
+      background: #aaaa90
+      transform: rotate(90deg);
+      transform-origin: left bottom;
+      .posted-year-month
+        font-weight: 300
+        font-size: 14px
+      .posted-day
+        font-weight: 500
+        font-size: 14px
+
+.posted-date:after
+  position: absolute
+  left: auto
+  bottom: 4px
+  display: block
+  content: ""
+  height: 1px
+  width: 35px
+  background: #717151
+
+.full-article-header
+  position: relative
+  .posted-block
+    left: 0px 
+
+.main-container
+  display: table
+  @media screen and (max-width: 1200px)
+    margin: auto
+  @media (max-width: 900px)
+    width: 700px
+
+.container
+  padding-left: 0px
+
+.articles-conteiner
+  padding-left: 15px
+  display: table-cell
+  width: 850px
+
+.sidebar
+  display: table-cell
+  width: 180px
+
+.contact-us
+  color: #698095
+  font-size: 24px
+  font-family: "Montserrat"
+  margin-bottom: 50px
+
+/*  POPULAR STYLES  */
+
+.popular 
+  width: 180px
+
+.popular-title
+  padding-left: 15px
+  font-size: 14px
+  background: #eeeee9
+  padding: 10px
+  color: #aaaa90
+  border-top: 1px solid #aaaa90
+  margin-bottom: 10px
+  font-family: "Montserrat"
+
+.popular-item-title
+  font-size: 12px
+  font-family: "Montserrat"
+  font-weight: 700
+  padding-bottom: 6px
+
+.popular-item
+  list-style: none
+  padding-bottom: 10px
+  padding-top: 10px
+  border-bottom: 1px solid #aaaa90
+  background: #fff
+  .popular-item-title
+    color: #333
+    font-size: 12px
+  .content
+    font-size: 12px
+    color: #333
+    word-wrap: break-word;
+
+/*  ARCHIVE STYLES  */
+
+.archive-title 
+  width: 180px 
+  margin-top: 30px
+  font-size: 14px
+  background: #eeeee9
+  padding: 10px
+  color: #aaaa90
+  border-top: 1px solid #aaaa90
+
+.archive-item
+  list-style: none
+  background: #fff
+  label
+    margin-bottom: 0px
+
+.archive-month
+  display: block
+  padding: 6px
+  font-size: 14px
+  border-bottom: 1px solid #eeeee9
+  a
+    color: #333
+    :hover
+      text-decoration: underline
+
+
+.archive-item-title
+  font-size: 15px
+  font-family: "Montserrat"
+  font-weight: 300
+  color: #aaaa90
+  background: #eeeee9
+  border-top: 1px solid #fff
+  padding: 7px
+
+
+/*  PAGINATION STYLES  */
+
+.pagination-wrapper
+  text-align: center
+  .pagination
+    padding-left: 43px
+
+ul.pagination li a
+  font-family: "Montserrat"
+  font-size: 14px
+  color: #333
+  background: transparent
+  border: 0px solid transparent
+  padding: 4px 8px
+  margin: 0px 4px
+  border-radius: 3px
+
+ul.pagination li a:hover
+  color: #333
+
+ul.pagination li.active a
+  background: #aaaa90
+  color: #fff
+
+/*  OPENED ARTICLE STYLES  */
+
+.article-image-full
+  width: 100%
+  height: 490px
+
+.under-image
+  background: #eeeee9
+  color: #aaaa90
+  padding: 5px 10px 5px 10px
+  font-size: 13px
+  font-family: "Montserrat"
+
+.article-full-title
+  margin-top: 50px
+  font-family: "Montserrat"
+  font-size: 36px
+  color: #333
+  font-weight: 500
+
+.article.full-content
+  margin-top: 45px
+  margin-bottom: 50px
+  color: #333
+  font-weight: 400
+  font-family: "Monserrat"
+  text-align: justify
+
+/*  COMMENTS STYLES  */
+
+.comments-title
+  font-size: 18px
+  color: #333
+  font-family: "Montserrat"
+  font-weight: 400
+  margin-top: 80px
+  margin-bottom: 15px
+
+.comment-wrapper
+  padding: 5px 10px
+  background: #eee
+
+.comment-wrapper:nth-child(odd)
+  background: #f5f5f5
+
+#comments
+  margin-bottom: 70px
+
+#leave-comment
+  margin-bottom: 100px
+
+.btn-success
+  background: #aaaa90
+  border: 0px solid transparent
+  font-family: "Montserrat"
+
+.ne-row
+  margin-bottom: 15px
+
+.blog-input
+  border-color: #ccc
+  border-radius: 0px
+  font-size: 15px 
+  color: #333
+  height: 40px
+  font-family: "Montserrat"
+
+.blog-input:focus
+  border-color: #aaaa90
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #aaaa90
+
+.submit-comment
+  font-size: 16px
+  margin-bottom: 105px
+  height: 47px
+  width: 390px
+  margin: auto
+  margin-top: 15px
+
+.submit-comment:hover, .create-new-article:hover, .create-article-submit:hover
+  background: #a18451
+  transition: all .3s
+
+
+/*  ACCORDION STYLES  */
+
+.footer
+  margin-top: -35px
+  background: #333
+  height: 35px
+  width: 100%
+  color: #fff
+  font-size: 14px
+  font-family: "Montserrat"
+  padding-top: 7px;
+  box-sizing: border-box
+
+.accordion 
+  font-family: "Montserrat"
+  width:180px
+
+.accordion ul 
+    list-style:none
+    margin:0
+    padding:0    
+
+.accordion li 
+    margin:0
+
+.accordion [type=radio], .accordion [type=checkbox] 
+    display:none
+
+.accordion label 
+    display:block
+    cursor:pointer
+    -webkit-transition: all .2s ease-out
+    -moz-transition: all .2s ease-out
+
+.accordion .content 
+    overflow:hidden
+    -webkit-transition: all .5s ease-out
+    -moz-transition: all .5s ease-out
+
+.vertical ul li 
+    overflow:hidden
+
+.vertical ul li .content 
+    height:0px
+
+.vertical [type=radio]:checked ~ label ~ .content, .vertical [type=checkbox]:checked ~ label ~ .content 
+  height: 395px
